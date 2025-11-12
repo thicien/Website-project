@@ -1105,3 +1105,213 @@ video {
     width: 22rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:top-60 {
+    top: 15rem;
+  }
+
+  .lg\:-left-1 {
+    left: -0.25rem;
+  }
+
+  .lg\:-left-\[1px\] {
+    left: -1px;
+  }
+
+  .lg\:top-\[17rem\] {
+    top: 17rem;
+  }
+
+  .lg\:left-\[\] {
+    left: ;
+  }
+
+  .lg\:left-\[37rem\] {
+    left: 37rem;
+  }
+
+  .lg\:left-72 {
+    left: 18rem;
+  }
+
+  .lg\:top-\[22rem\] {
+    top: 22rem;
+  }
+
+  .lg\:top-80 {
+    top: 20rem;
+  }
+
+  .lg\:left-\[72\] {
+    left: 72;
+  }
+
+  .lg\:left-\[38rem\] {
+    left: 38rem;
+  }
+
+  .lg\:left-20 {
+    left: 5rem;
+  }
+
+  .lg\:top-96 {
+    top: 24rem;
+  }
+
+  .lg\:top-\[\] {
+    top: ;
+  }
+
+  .lg\:top-\[25rem\] {
+    top: 25rem;
+  }
+
+  .lg\:left-\[19rem\] {
+    left: 19rem;
+  }
+
+  .lg\:left-\[34rem\] {
+    left: 34rem;
+  }
+
+  .lg\:top-\[30rem\] {
+    top: 30rem;
+  }
+
+  .lg\:top-\[31rem\] {
+    top: 31rem;
+  }
+
+  .lg\:left-\[rem\] {
+    left: rem;
+  }
+
+  .lg\:left-\[69rem\] {
+    left: 69rem;
+  }
+
+  .lg\:left-\[10rem\] {
+    left: 10rem;
+  }
+
+  .lg\:top-\[50rem\] {
+    top: 50rem;
+  }
+
+  .lg\:top-\[rem\] {
+    top: rem;
+  }
+
+  .lg\:top-\[47rem\] {
+    top: 47rem;
+  }
+
+  .lg\:left-48 {
+    left: 12rem;
+  }
+
+  .lg\:left-40 {
+    left: 10rem;
+  }
+
+  .lg\:left-\[60rem\] {
+    left: 60rem;
+  }
+
+  .lg\:left-\[64rem\] {
+    left: 64rem;
+  }
+
+  .lg\:left-\[65rem\] {
+    left: 65rem;
+  }
+
+  .lg\:left-\[66rem\] {
+    left: 66rem;
+  }
+
+  .lg\:left-\[66\.5rem\] {
+    left: 66.5rem;
+  }
+
+  .lg\:left-\[66\.2rem\] {
+    left: 66.2rem;
+  }
+
+  .lg\:h-\[\] {
+    height: ;
+  }
+
+  .lg\:h-\[54rem\] {
+    height: 54rem;
+  }
+
+  .lg\:h-\[23re\] {
+    height: 23re;
+  }
+
+  .lg\:h-\[23rem\] {
+    height: 23rem;
+  }
+
+  .lg\:h-\[42rem\] {
+    height: 42rem;
+  }
+
+  .lg\:h-\[41rem\] {
+    height: 41rem;
+  }
+
+  .lg\:h-\[34rem\] {
+    height: 34rem;
+  }
+
+  .lg\:h-\[33rem\] {
+    height: 33rem;
+  }
+
+  .lg\:h-\[48rem\] {
+    height: 48rem;
+  }
+
+  .lg\:h-\[25rem\] {
+    height: 25rem;
+  }
+
+  .lg\:h-\[26rem\] {
+    height: 26rem;
+  }
+
+  .lg\:w-\[45rem\] {
+    width: 45rem;
+  }
+
+  .lg\:w-56 {
+    width: 14rem;
+  }
+
+  .lg\:w-\[44rem\] {
+    width: 44rem;
+  }
+
+  .lg\:w-\[32\] {
+    width: 32;
+  }
+
+  .lg\:w-\[32rem\] {
+    width: 32rem;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[25\] {
+    width: 25;
+  }
+
+  .lg\:w-\[25rem\] {
+    width: 25rem;
+  }
+}
