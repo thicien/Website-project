@@ -1,59 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baumeister website project</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/output.css">
-</head>
-<body id="bdy">
-    <nav class="w-full flex flex-wrap justify-between items-center px-4 py-3 font-semibold relative bg-white shadow-sm">
-        <div class="relative" id="languageDropdown">
-            <button id="dropdownButton" class="flex flex-col text-center bg-white border border-gray-200 rounded-lg px-3 py-1 shadow-sm hover:bg-gray-50 transition">
-              <span>DE</span>
-              <span>EN</span>
-            </button>
-        </div>
-        <div class="flex-1 text-center bg-white">
-          <h1 class="font-bold text-2xl sm:text-3xl truncate font-outfit">Baumeister</h1>
-        </div>
-        <div class="hidden sm:flex flex-col items-end text-right space-y-0.5 font-semibold">
-           <a href="#" >About</a>
-           <a href="#" >Services</a>
-           <a href="#" >References</a>
-           <a href="#" >Contact</a>
-        </div>
-        <div class="sm:hidden flex justify-end items-center">
-            <div id="mobileMenuIcon" class="relative w-10 h-10 cursor-pointer flex items-center justify-center">
-               <img src="/images/Group 5.png" alt="Menu open icon" class="w-full h-full object-contain">
-            </div>
-        </div>
-        <div id="mobileMenu" class="hidden absolute text-green-700 text-3xl top-full right-2 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-20 flex-col font-semibold sm:hidden">
-            <a href="#" class="block px-4 py-3 font-bold">About</a>
-            <a href="#" class="block px-4 py-3 font-bold">Services</a>
-            <a href="#" class="block px-4 py-3 font-bold">References</a>
-            <a href="#" class="block px-4 py-3 font-bold">Contact</a>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Website project template</title>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <!-- <div id="about"></div>
+    <div id="service"></div> -->
+    <!-- <div id="hero"></div>
+    <div id="contact"></div>
+    <div id="footer"></div> -->
     <script>
+      const loadComponent = (id, url, callback) => {
+        fetch(url)
+          .then((res) => {
+            if (!res.ok) throw new Error(`Failed to load ${url}`);
+            return res.text();
+          })
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+            if (callback) callback();
+          })
+          .catch((err) => console.error(err));
+      };
+
+      window.addEventListener("DOMContentLoaded", () => {
+        loadComponent("navbar", "src/sections/navbar.html", setupMobileMenu);
+        //   loadComponent("hero", "src/sections/hero.html");
+        //   loadComponent("about", "src/sections/about.html");
+        //   loadComponent("service", "src/sections/service.html");
+        //   loadComponent("contact", "src/sections/contact.html");
+        //   loadComponent("footer", "src/sections/footer.html");
+      });
+
+      function setupMobileMenu() {
         const menuIcon = document.getElementById("mobileMenuIcon");
         const menu = document.getElementById("mobileMenu");
+
+        if (!menuIcon || !menu) return;
+
         let isMenuOpen = false;
 
         menuIcon.addEventListener("click", () => {
-        isMenuOpen = !isMenuOpen;
-        menu.classList.toggle('hidden');
-        if(isMenuOpen) {
-            menuIcon.innerHTML = `
-          <img src="/images/Group 5 (1).png" alt="Close menu icon" class="w-full h-full object-contain">
-        `;
-        } else{
-            menuIcon.innerHTML = `
-          <img src="/images/Group 5.png" alt="Open menu icon" class="w-full h-full object-contain">
-        `;
-        }
-        });
+          isMenuOpen = !isMenuOpen;
+          menu.classList.toggle("hidden");
 
+          if (isMenuOpen) {
+            menuIcon.innerHTML = `
+        <img src="./images/closeButton.png" alt="Close menu icon" class="w-full h-full object-contain">
+      `;
+          } else {
+            menuIcon.innerHTML = `
+        <img src="./images/openButton.png" alt="Open menu icon" class="w-full h-full object-contain">
+      `;
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
