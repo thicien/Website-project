@@ -9,11 +9,6 @@
 
   <body>
     <div id="navbar"></div>
-    <!-- <div id="about"></div>
-    <div id="service"></div> -->
-    <!-- <div id="hero"></div>
-    <div id="contact"></div>
-    <div id="footer"></div> -->
     <script>
       const loadComponent = (id, url, callback) => {
         fetch(url)
@@ -30,11 +25,6 @@
 
       window.addEventListener("DOMContentLoaded", () => {
         loadComponent("navbar", "src/sections/navbar.html", setupMobileMenu);
-        //   loadComponent("hero", "src/sections/hero.html");
-        //   loadComponent("about", "src/sections/about.html");
-        //   loadComponent("service", "src/sections/service.html");
-        //   loadComponent("contact", "src/sections/contact.html");
-        //   loadComponent("footer", "src/sections/footer.html");
       });
 
       function setupMobileMenu() {
