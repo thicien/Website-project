@@ -7,8 +7,9 @@
   </head>
   <body>
     <div id="navbar"></div>
+    <div id="hero-section"></div>
     <script>
-      const loadComponent = (id, url, callback) => {
+      const loadComponent = (id, url) => {
         fetch(url)
           .then((res) => {
             if (!res.ok) throw new Error(`Failed to load ${url}`);
@@ -16,13 +17,12 @@
           })
           .then((html) => {
             document.getElementById(id).innerHTML = html;
-            if (callback) callback();
           })
           .catch((err) => console.error(err));
       };
 
       window.addEventListener("DOMContentLoaded", () => {
-        loadComponent("navbar", "src/sections/navbar.html", setupMobileMenu);
+        loadComponent("hero-section", "src/sections/HeroSection.html");
       });
 
       function setupMobileMenu() {
