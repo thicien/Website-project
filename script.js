@@ -1,4 +1,4 @@
-const loadComponent = (id, url, callback) => {
+const loadComponent = (id, url, callback = setupMobileMenu) => {
         fetch(url)
           .then((res) => {
             if (!res.ok) throw new Error(`Failed to load ${url}`);
@@ -12,7 +12,7 @@ const loadComponent = (id, url, callback) => {
       };
 
       window.addEventListener("DOMContentLoaded", () => {
-        loadComponent("navbar", "src/sections/navbar.html", setupMobileMenu);
+        loadComponent("navbar", "src/sections/Navbar.html");
       });
 
       function setupMobileMenu() {
