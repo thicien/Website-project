@@ -648,6 +648,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-52 {
   width: 13rem;
   height: 13rem;
@@ -671,6 +675,10 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-24 {
@@ -769,6 +777,11 @@ video {
 .bg-red-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .text-center {
