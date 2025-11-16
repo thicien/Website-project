@@ -554,20 +554,12 @@ video {
   display: none;
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: sticky;
 }
 
 .left-1 {
@@ -612,26 +604,6 @@ video {
 
 .top-\[31rem\] {
   top: 31rem;
-}
-
-.-top-\[17rem\] {
-  top: -17rem;
-}
-
-.-top-\[20rem\] {
-  top: -20rem;
-}
-
-.top-\[17rem\] {
-  top: 17rem;
-}
-
-.-top-\[37rem\] {
-  top: -37rem;
-}
-
-.-top-\[67rem\] {
-  top: -67rem;
 }
 
 .z-0 {
@@ -687,14 +659,6 @@ video {
   height: auto;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[150vh\] {
-  height: 150vh;
-}
-
 .w-24 {
   width: 6rem;
 }
@@ -725,10 +689,6 @@ video {
 
 .overflow-visible {
   overflow: visible;
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .text-center {
