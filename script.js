@@ -12,7 +12,7 @@ const loadComponent = (id, url, callback = setupMobileMenu) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("about-us", "src/sections/AboutUs.html");
+  loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
 });
 
 function setupMobileMenu() {
@@ -37,4 +37,19 @@ function setupMobileMenu() {
       `;
     }
   });
+}
+
+function aboutUsServices() {
+  const services = document.getElementById("services");
+  const allServices = [
+    "Brand strategy",
+    "Corporate Identity & Website development",
+    "SEO & copywriting",
+    "Media Relations",
+    "Digital marketing & content production",
+    "Influencer relations",
+  ];
+  services.innerHTML = allServices
+    .map((service) => `<h2>${service}</h2>`)
+    .join("");
 }
