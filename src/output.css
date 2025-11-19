@@ -591,6 +591,11 @@ video {
   margin-right: auto;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .-ml-\[10px\] {
   margin-left: -10px;
 }
@@ -621,6 +626,10 @@ video {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.min-w-44 {
+  min-width: 11rem;
 }
 
 .flex-col {
@@ -655,6 +664,14 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-\[60px\] {
