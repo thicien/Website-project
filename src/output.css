@@ -616,6 +616,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .w-\[245px\] {
   width: 245px;
 }
@@ -640,8 +644,25 @@ video {
   justify-content: center;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .text-pretty {
   text-wrap: pretty;
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
 
 .text-2xl {
