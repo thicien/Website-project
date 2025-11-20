@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const list = document.createElement("div");
   list.className =
-  "text-right space-y-1 text-black font-semibold text-[24px] md:text-[20px] lg:text-[24px] mr-32 pt-20 pb-20";
+  "text-right text-black font-semibold text-[20px] md:text-[24px] lg:text-[24px] mr-20 lg:mr-32 pt-20 pb-20";
 
 
   services.forEach(item => {
