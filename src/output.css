@@ -612,10 +612,6 @@ video {
   margin-top: 3.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -636,20 +632,12 @@ video {
   flex-direction: column;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .text-pretty {
@@ -684,16 +672,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[50\%\] {
-    width: 50%;
-  }
-
   .sm\:w-\[70\%\] {
     width: 70%;
-  }
-
-  .sm\:w-\[80\%\] {
-    width: 80%;
   }
 }
 
@@ -716,11 +696,6 @@ video {
 
   .md\:z-50 {
     z-index: 50;
-  }
-
-  .md\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
   }
 
   .md\:mx-0 {
@@ -756,16 +731,13 @@ video {
     flex-direction: row;
   }
 
-  .md\:items-center {
-    align-items: center;
-  }
-
   .md\:justify-start {
     justify-content: flex-start;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -776,11 +748,6 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:font-medium {
@@ -797,28 +764,12 @@ video {
     left: 12rem;
   }
 
-  .lg\:ml-\[140px\] {
-    margin-left: 140px;
-  }
-
-  .lg\:ml-\[199px\] {
-    margin-left: 199px;
-  }
-
-  .lg\:ml-24 {
-    margin-left: 6rem;
-  }
-
-  .lg\:ml-20 {
-    margin-left: 5rem;
-  }
-
   .lg\:ml-32 {
     margin-left: 8rem;
   }
 
-  .lg\:flex {
-    display: flex;
+  .lg\:ml-\[140px\] {
+    margin-left: 140px;
   }
 
   .lg\:grid {
@@ -829,36 +780,12 @@ video {
     width: 563px;
   }
 
-  .lg\:w-\[\] {
-    width: ;
-  }
-
-  .lg\:w-\[90\] {
-    width: 90;
-  }
-
-  .lg\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .lg\:w-\[100\] {
-    width: 100;
-  }
-
-  .lg\:w-\[100\%\] {
-    width: 100%;
-  }
-
   .lg\:w-\[80\%\] {
     width: 80%;
   }
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 
   .lg\:text-5xl {
