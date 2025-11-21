@@ -49,6 +49,6 @@ function aboutUsServices() {
     "Influencer relations",
   ];
   services.innerHTML = allServices
-    .map((service) => `<p>${service}</p>`)
+    .map((service) => `<p class="max-w-[20.5rem]">${service}</p>`)
     .join("");
 }
