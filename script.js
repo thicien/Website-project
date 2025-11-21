@@ -1,0 +1,54 @@
+const loadComponent = (id, url, callback = setupMobileMenu) => {
+  fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error(`Failed to load ${url}`);
+      return res.text();
+    })
+    .then((html) => {
+      document.getElementById(id).innerHTML = html;
+      if (callback) callback();
+    })
+    .catch((err) => console.error(err));
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
+});
+
+function setupMobileMenu() {
+  const menuIcon = document.getElementById("mobileMenuIcon");
+  const menu = document.getElementById("mobileMenu");
+
+  if (!menuIcon || !menu) return;
+
+  let isMenuOpen = false;
+
+  menuIcon.addEventListener("click", () => {
+    isMenuOpen = !isMenuOpen;
+    menu.classList.toggle("hidden");
+
+    if (isMenuOpen) {
+      menuIcon.innerHTML = `
+        <img src="./images/closeButton.png" alt="Close menu icon" class="w-full h-full object-contain">
+      `;
+    } else {
+      menuIcon.innerHTML = `
+        <img src="./images/openButton.png" alt="Open menu icon" class="w-full h-full object-contain">
+      `;
+    }
+  });
+}
+
+function aboutUsServices() {
+  const services = document.getElementById("services");
+  const allServices = [
+    "Corporate Identity & Website development",
+    "SEO & copywriting",
+    "Media Relations",
+    "Digital marketing & content production",
+    "Influencer relations",
+  ];
+  services.innerHTML = allServices
+    .map((service) => `<p class="max-w-[20.5rem]">${service}</p>`)
+    .join("");
+}
