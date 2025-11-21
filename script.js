@@ -42,7 +42,6 @@ function setupMobileMenu() {
 function aboutUsServices() {
   const services = document.getElementById("services");
   const allServices = [
-    "Brand strategy",
     "Corporate Identity & Website development",
     "SEO & copywriting",
     "Media Relations",
@@ -50,6 +49,6 @@ function aboutUsServices() {
     "Influencer relations",
   ];
   services.innerHTML = allServices
-    .map((service) => `<h2>${service}</h2>`)
+    .map((service) => `<p>${service}</p>`)
     .join("");
 }
