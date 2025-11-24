@@ -696,7 +696,7 @@ video {
 }
 
 .font-outfit{
-  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Outfit;
 }
 
 .text-2xl{
@@ -769,10 +769,6 @@ video {
     display: flex;
   }
 
-  .md\:w-\[3e88px\]{
-    width: 3e88px;
-  }
-
   .md\:w-\[388px\]{
     width: 388px;
   }
@@ -795,10 +791,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:m-32{
-    margin: 8rem;
-  }
-
   .lg\:mx-2{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -811,14 +803,6 @@ video {
 
   .lg\:mt-0{
     margin-top: 0px;
-  }
-
-  .lg\:ml-24{
-    margin-left: 6rem;
-  }
-
-  .lg\:ml-32{
-    margin-left: 8rem;
   }
 
   .lg\:flex{
