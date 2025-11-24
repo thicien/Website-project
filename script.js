@@ -12,11 +12,11 @@ const loadComponent = (id, url, callback) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("footer", "src/section/footer.html");
+  loadComponent("footer", "src/sections/footer.html");
 });
 fetch("footer.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("footer-placeholder").innerHTML = html;
-    })
-        .catch(err => console.error("Footer load failed:", err));
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("footer-placeholder").innerHTML = html;
+  })
+  .catch((err) => console.error("Footer load failed:", err));
