@@ -13,6 +13,7 @@ const loadComponent = (id, url, callback = setupMobileMenu) => {
 
 window.addEventListener("DOMContentLoaded", () => {
   loadComponent("navbar", "src/sections/Navbar.html", setupMobileMenu);
+  loadComponent("hero-section", "src/sections/HeroSection.html");
   loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
 });
 
