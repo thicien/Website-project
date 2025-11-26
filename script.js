@@ -1,3 +1,5 @@
+import contactPagePopulation from "./contacts.js";
+
 const loadComponent = (id, url, callback = setupMobileMenu) => {
   fetch(url)
     .then((res) => {
@@ -12,7 +14,11 @@ const loadComponent = (id, url, callback = setupMobileMenu) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("contact-us", "src/sections/contact.html");
+  loadComponent(
+    "contact-us",
+    "src/sections/contact.html",
+    contactPagePopulation
+  );
 });
 
 function setupMobileMenu() {
