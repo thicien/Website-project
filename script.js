@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     wrapper.appendChild(footer);
     document.body.appendChild(wrapper);
-  });
+});
 
 
 
