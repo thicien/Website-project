@@ -11,57 +11,107 @@ const loadComponent = (id, url, callback) => {
     .catch((err) => console.error(err));
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  
+window.addEventListener("DOMContentLoaded", () => {
+  loadComponent("services", "src/sections/services.html", servicesContent);
+});
+
+function servicesContent() {
   const services = [
-    "Ace Hotel",
-    "ARMEDANGELS",
-    "BERLIN DESIGN WEEK",
-    "Berliner Berg",
-    "BITE CLUB",
-    "Budweiser Budvar",
-    "ChungKing Noodles",
-    "Designpreis Brandenburg",
-    "Die Techniker",
-    "European Street Food Awards",
-    "Grundmann Dentistry",
-    "HORNBACH Werkstück",
-    "HORNBACH macht Schule",
-    "iF Design",
-    "Kopka",
-    "KLH Maßschuhe",
-    "Lode & Stijn",
-    "Luya",
-    "MEISSEN",
-    "Motel Beer & Coffee",
-    "PAPER & TEA",
-    "rocket & basil",
-    "Seeberger Gruppe",
-    "Shiori",
-    "SPOC Magazin",
-    "stocubo",
-    "STUR",
-    "World of Coffee",
-    "yamo"
+    {
+      name: "Ace Hotel",
+      link: "https://acehotel.com/",
+    },
+    { name: "ARMEDANGELS", link: "https://www.armedangels.com/en" },
+    {
+      name: "BERLIN DESIGN WEEK",
+      link: "https://berlindesignweek.com/",
+    },
+    { name: "Berliner Berg", link: "https://berlinerberg.com/" },
+    {
+      name: "BITE CLUB",
+      link: "https://www.instagram.com/biteclubberlin/?hl=de",
+    },
+    {
+      name: "Budweiser Budvar",
+      link: "https://budweiserbudvar.com/?redirect_from=de&redirect_code=3",
+    },
+    {
+      name: "ChungKing Noodles",
+      link: "https://www.instagram.com/chungkingnoodles/?hl=de",
+    },
+    {
+      name: "Designpreis Brandenburg",
+      link: "https://designpreis-brandenburg.de/",
+    },
+    { name: "Die Techniker", link: "https://www.tk.de/techniker" },
+    {
+      name: "European Street Food Awards",
+      link: "https://europeanstreetfood.com/",
+    },
+    {
+      name: "Grundmann Dentistry",
+      link: "https://www.grundmann-dentistry.de/",
+    },
+    {
+      name: "HORNBACH Werkstück",
+      link: "https://www.hornbach.de/aktuelles/werkstueck-edition/",
+    },
+    {
+      name: "HORNBACH macht Schule",
+      link: "https://www.hornbach.de/nachhaltigkeit/hornbach-macht-schule/",
+    },
+    {
+      name: "iF Design",
+      link: "https://ifdesign.com/de/",
+    },
+    { name: "Kopka", link: "https://designpreis-brandenburg.de/" },
+    {
+      name: "KLH Maßschuhe",
+      link: "https://budweiserbudvar.com/?redirect_from=de&redirect_code=3",
+    },
+    {
+      name: "Lode & Stijn",
+      link: "https://www.instagram.com/chungkingnoodles/?hl=de",
+    },
+    { name: "Luya", link: "https://berlindesignweek.com/" },
+    { name: "MEISSEN", link: "https://berlinerberg.com/" },
+    {
+      name: "Motel Beer & Coffee",
+      link: "https://www.instagram.com/biteclubberlin/?hl=de",
+    },
+    {
+      name: "PAPER & TEA",
+      link: "https://budweiserbudvar.com/?redirect_from=de&redirect_code=3",
+    },
+    { name: "rocket & basil", link: "https://designpreis-brandenburg.de/" },
+    { name: "Seeberger Gruppe", link: "https://designpreis-brandenburg.de/" },
+    { name: "Shiori", link: "https://www.tk.de/techniker" },
+    { name: "SPOC Magazin", link: "https://europeanstreetfood.com/" },
+    {
+      name: "stocubo",
+      link: "https://www.hornbach.de/aktuelles/werkstueck-edition/",
+    },
+    {
+      name: "STUR",
+      link: "https://www.hornbach.de/nachhaltigkeit/hornbach-macht-schule/",
+    },
+    {
+      name: "World of Coffee",
+      link: "https://www.hornbach.de/nachhaltigkeit/hornbach-macht-schule/",
+    },
+    { name: "yamo", link: "https://ifdesign.com/de/" },
   ];
 
   const container = document.getElementById("servicesContainer");
 
-  const list = document.createElement("div");
-  list.className =
-    "text-right text-black font-semibold text-[20px] md:text-[24px] lg:text-[24px] mr-20 lg:mr-32 pt-20 pb-20";
-
-  services.forEach(item => {
+  services.forEach((item) => {
     const link = document.createElement("a");
-    link.textContent = item;
+    link.textContent = item.name;
+    link.href = item.link;
+    link.target = "_blank";
 
-    link.href = `./pages/${item.replace(/ /g, "-").toLowerCase()}.html`; 
+    link.className = "block cursor-pointer text-right transition-all";
 
-    link.className = "block cursor-pointer hover:text-green-600 transition-all";
-    list.appendChild(link);
+    container.appendChild(link);
   });
-
-  container.appendChild(list);
-
-});
-
+}

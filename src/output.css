@@ -1,4 +1,6 @@
-*, ::before, ::after {
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -52,7 +54,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,11 +556,56 @@ video {
   display: none;
 }
 
-.bg-\[\#FFE800\] {
+.mr-20{
+  margin-right: 5rem;
+}
+
+.bg-\[\#FFE800\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 232 0 / var(--tw-bg-opacity, 1));
 }
 
-.font-outfit {
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.font-outfit{
   font-family: Outfit;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px){
+  .md\:text-\[24px\]{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:mr-32{
+    margin-right: 8rem;
+  }
+
+  .lg\:text-\[24px\]{
+    font-size: 24px;
+  }
 }
