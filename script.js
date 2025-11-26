@@ -12,7 +12,7 @@ const loadComponent = (id, url, callback) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("footer", "src/section/footer.html");
+  loadComponent("footer", "src/sections/footer.html");
 });
 fetch("footer.html")
     .then(res => res.text())
@@ -139,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.appendChild(footer);
     document.body.appendChild(wrapper);
   });
+
 
 
 
