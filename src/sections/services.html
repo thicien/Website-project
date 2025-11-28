@@ -1,30 +1,8 @@
-<article class="relative font-outfit bg-center w-full bg-no-repeat h-auto">
-  <img
-    src="./images/bigScreen.png"
-    alt="Background Image For Large Screen"
-    class="hidden lg:block w-full h-auto"
-  />
-
-  <img
-    src="./images/mediumScreen.png"
-    alt="Background Image For Medium Screen"
-    class="absolute hidden md:block lg:hidden w-full object-cover"
-  />
-
-  <img
-    src="./images/ipad.png"
-    alt="Background Image For Small Screen"
-    class="absolute hidden sm:block md:hidden w-full h-auto"
-  />
-
-  <img
-    src="./images/ipad.png"
-    alt="Background Image For Mobile Screen"
-    class="absolute block sm:hidden w-full h-auto"
-  />
-
+<article
+  class="relative font-outfit bg-center bg-no-repeat bg-cover w-full min-h-screen bg-[url('./images/ipad.png')] sm:bg-[url('./images/ipad.png')] md:bg-[url('./images/mediumScreen.png')] lg:bg-[url('./images/bigScreen.png')]"
+>
   <div
     id="servicesContainer"
-    class="absolute top-0 right-0 text-black font-semibold text-[20px] md:text-[24px] lg:text-[24px] mr-5 md:mr-20 lg:mr-32"
+    class="p-5 text-black font-semibold text-[20px] md:text-[24px] lg:text-[24px]"
   ></div>
 </article>
