@@ -1,4 +1,6 @@
-*, ::before, ::after {
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -52,7 +54,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -552,4 +554,103 @@ video {
 
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
+}
+
+.relative{
+  position: relative;
+}
+
+.mr-40{
+  margin-right: 10rem;
+}
+
+.mr-20{
+  margin-right: 5rem;
+}
+
+.mr-11{
+  margin-right: 2.75rem;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.bg-\[url\(\'\.\/images\/ipad\.png\'\)\]{
+  background-image: url('./images/ipad.png');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.font-outfit{
+  font-family: Outfit;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.font-normal{
+  font-weight: 400;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px){
+  .sm\:mr-20{
+    margin-right: 5rem;
+  }
+
+  .sm\:bg-\[url\(\'\.\/images\/ipad\.png\'\)\]{
+    background-image: url('./images/ipad.png');
+  }
+}
+
+@media (min-width: 768px){
+  .md\:m-32{
+    margin: 8rem;
+  }
+
+  .md\:mr-32{
+    margin-right: 8rem;
+  }
+
+  .md\:bg-\[url\(\'\.\/images\/mediumScreen\.png\'\)\]{
+    background-image: url('./images/mediumScreen.png');
+  }
+
+  .md\:text-\[24px\]{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:bg-\[url\(\'\.\/images\/bigScreen\.png\'\)\]{
+    background-image: url('./images/bigScreen.png');
+  }
+
+  .lg\:text-\[24px\]{
+    font-size: 24px;
+  }
 }
