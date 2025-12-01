@@ -22,11 +22,17 @@ window.addEventListener("DOMContentLoaded", () => {
   loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
   loadComponent("service", "src/sections/services.html", servicesContent);
   loadComponent("footer", "src/sections/footer.html", populateFooter);
-   loadComponent("data-privacy", "src/sections/data-privacy.html");
+  loadComponent("data-privacy", "src/sections/data-privacy.html");
 });
 export function test() {
-  const links = [{
-    linkName:"About", url: "#"}, {linkName: "Services", url:"#"}, {linkName: "References", url:"#"}, {linkName: "Contact", url:"/src/sections/contact.html"}
+  const links = [
+    {
+      linkName: "About",
+      url: "#about-us",
+    },
+    { linkName: "Services", url: "#service" },
+    { linkName: "References", url: "/src/sections/data-privacy.html" },
+    { linkName: "Contact", url: "/src/sections/contact.html" },
   ];
   const smallScreensLinks = document.querySelector(
     "[data-id = large-devices-screens]"
@@ -39,7 +45,7 @@ export function test() {
   largeScreensLinks.innerHTML = ``;
 
   links.forEach((link) => {
-    const {linkName, url} = link;
+    const { linkName, url } = link;
     smallScreensLinks.innerHTML += `<a href="${url}" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
         >${linkName}</a
       >`;
@@ -63,11 +69,11 @@ export function setupMobileMenu() {
 
     if (isMenuOpen) {
       menuIcon.innerHTML = `
-        <img src="./images/closeButton.png" alt="Close menu icon" class="w-full h-full object-contain">
+        <img src="/images/closeButton.png" alt="Close menu icon" class="w-full h-full object-contain">
       `;
     } else {
       menuIcon.innerHTML = `
-        <img src="./images/openButton.png" alt="Open menu icon" class="w-full h-full object-contain">
+        <img src="/images/openButton.png" alt="Open menu icon" class="w-full h-full object-contain">
       `;
     }
   });
