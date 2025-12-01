@@ -22,11 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
   loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
   loadComponent("service", "src/sections/services.html", servicesContent);
   loadComponent("footer", "src/sections/footer.html", populateFooter);
-  //   loadComponent(
-  //   "contact-us",
-  //   "src/sections/contact.html",
-  //   contactPagePopulation
-  // );
+   loadComponent("data-privacy", "src/sections/data-privacy.html");
 });
 export function test() {
   const links = [{
