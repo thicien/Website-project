@@ -12,13 +12,33 @@ const loadComponent = (id, url, callback = setupMobileMenu) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("navbar", "src/sections/Navbar.html", setupMobileMenu);
+    loadComponent("navbar", "src/sections/Navbar.html", () => {
+        setupMobileMenu()
+        test()
+  });
   loadComponent("hero-section", "src/sections/HeroSection.html");
   loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
   loadComponent("service", "src/sections/services.html", servicesContent);
   loadComponent("footer", "src/sections/footer.html", populateFooter);
 });
+function test() {
+    const links = ["About", "services", "References", "Contact"]
+    const smallScreensLinks = document.querySelector("[data-id = large-devices-screens]")
+    const largeScreensLinks = document.querySelector("[data-id = small-screens-links]")
 
+    smallScreensLinks.innerHTML = ``;
+    largeScreensLinks.innerHTML = ``;
+
+    links.forEach(link => {
+        smallScreensLinks.innerHTML +=`<a href="#" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
+        >${link}</a
+      >`
+        
+        largeScreensLinks.innerHTML +=`<a href="#" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
+        >${link}</a
+      >`
+    })
+}
 function setupMobileMenu() {
   const menuIcon = document.getElementById("mobileMenuIcon");
   const menu = document.getElementById("mobileMenu");
