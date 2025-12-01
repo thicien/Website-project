@@ -584,6 +584,10 @@ video {
   top: 450px;
 }
 
+.top-\[50rem\]{
+  top: 50rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -622,6 +626,10 @@ video {
 
 .order-4{
   order: 4;
+}
+
+.m-20{
+  margin: 5rem;
 }
 
 .mx-10{
@@ -675,6 +683,10 @@ video {
   margin-left: 2.5rem;
 }
 
+.mr-11{
+  margin-right: 2.75rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -707,6 +719,42 @@ video {
   margin-top: auto;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mt-96{
+  margin-top: 24rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-60{
+  margin-top: 15rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
+}
+
+.-mr-8{
+  margin-right: -2rem;
+}
+
+.-mr-12{
+  margin-right: -3rem;
+}
+
+.-mr-24{
+  margin-right: -6rem;
+}
+
+.mt-\[60rem\]{
+  margin-top: 60rem;
+}
+
 .flex{
   display: flex;
 }
@@ -735,6 +783,18 @@ video {
   height: 100%;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-\[70\]{
+  height: 70;
+}
+
+.h-\[70vh\]{
+  height: 70vh;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -757,6 +817,18 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[100\]{
+  width: 100;
+}
+
+.w-\[100vw\]{
+  width: 100vw;
 }
 
 .min-w-44{
@@ -783,8 +855,16 @@ video {
   flex-wrap: wrap;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -817,6 +897,12 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -841,9 +927,46 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-yellow-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[url\(\'\.\/images\/ipad\.png\'\)\]{
+  background-image: url('./images/ipad.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/ipad\.png\'\)\]{
+  background-image: url('../images/ipad.png');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-repeat{
+  background-repeat: repeat;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-20{
+  padding: 5rem;
 }
 
 .px-20{
@@ -871,12 +994,56 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-40{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.py-60{
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-64{
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-36{
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .pt-80{
   padding-top: 20rem;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-outfit{
@@ -886,6 +1053,10 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
 }
 
 .text-\[24px\]{
@@ -915,6 +1086,11 @@ video {
 
 .leading-\[60px\]{
   line-height: 60px;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-green-700{
@@ -959,6 +1135,10 @@ video {
 
   .sm\:w-\[70\%\]{
     width: 70%;
+  }
+
+  .sm\:bg-\[url\(\'\.\/images\/ipad\.png\'\)\]{
+    background-image: url('./images/ipad.png');
   }
 
   .sm\:text-3xl{
@@ -1045,6 +1225,10 @@ video {
     margin-left: 250px;
   }
 
+  .md\:mr-32{
+    margin-right: 8rem;
+  }
+
   .md\:mt-24{
     margin-top: 6rem;
   }
@@ -1063,6 +1247,18 @@ video {
 
   .md\:mt-\[450px\]{
     margin-top: 450px;
+  }
+
+  .md\:mt-\[40rem\]{
+    margin-top: 40rem;
+  }
+
+  .md\:mt-\[50rem\]{
+    margin-top: 50rem;
+  }
+
+  .md\:mt-\[60rem\]{
+    margin-top: 60rem;
   }
 
   .md\:flex{
@@ -1167,6 +1363,20 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:bg-\[url\(\'\.\/images\/mediumScreen\.png\'\)\]{
+    background-image: url('./images/mediumScreen.png');
+  }
+
+  .md\:bg-\[url\(\'\.\.\/images\/mediumScreen\.png\'\)\]{
+    background-image: url('../images/mediumScreen.png');
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1179,6 +1389,10 @@ video {
 
   .md\:text-\[16px\]{
     font-size: 16px;
+  }
+
+  .md\:text-\[24px\]{
+    font-size: 24px;
   }
 
   .md\:text-xl{
@@ -1259,6 +1473,38 @@ video {
 
   .lg\:mt-\[90px\]{
     margin-top: 90px;
+  }
+
+  .lg\:mr-8{
+    margin-right: 2rem;
+  }
+
+  .lg\:mr-10{
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mr-12{
+    margin-right: 3rem;
+  }
+
+  .lg\:mr-14{
+    margin-right: 3.5rem;
+  }
+
+  .lg\:mr-1{
+    margin-right: 0.25rem;
+  }
+
+  .lg\:mr-16{
+    margin-right: 4rem;
+  }
+
+  .lg\:mr-20{
+    margin-right: 5rem;
+  }
+
+  .lg\:mt-60{
+    margin-top: 15rem;
   }
 
   .lg\:block{
@@ -1349,12 +1595,26 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:space-y-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:self-center{
     align-self: center;
   }
 
   .lg\:overflow-clip{
     overflow: clip;
+  }
+
+  .lg\:bg-\[url\(\'\.\/images\/bigScreen\.png\'\)\]{
+    background-image: url('./images/bigScreen.png');
+  }
+
+  .lg\:bg-\[url\(\'\.\.\/images\/bigScreen\.png\'\)\]{
+    background-image: url('../images/bigScreen.png');
   }
 
   .lg\:pl-\[450px\]{
@@ -1385,6 +1645,10 @@ video {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-\[24px\]{
+    font-size: 24px;
   }
 
   .lg\:leading-\[90px\]{
