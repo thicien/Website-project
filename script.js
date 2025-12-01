@@ -1,4 +1,6 @@
-const loadComponent = (id, url, callback = setupMobileMenu) => {
+// import contactPagePopulation from "./contacts.js";
+
+export const loadComponent = (id, url, callback = setupMobileMenu) => {
   fetch(url)
     .then((res) => {
       if (!res.ok) throw new Error(`Failed to load ${url}`);
@@ -12,34 +14,46 @@ const loadComponent = (id, url, callback = setupMobileMenu) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-    loadComponent("navbar", "src/sections/Navbar.html", () => {
-        setupMobileMenu()
-        test()
+  loadComponent("navbar", "src/sections/Navbar.html", () => {
+    setupMobileMenu();
+    test();
   });
   loadComponent("hero-section", "src/sections/HeroSection.html");
   loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
   loadComponent("service", "src/sections/services.html", servicesContent);
   loadComponent("footer", "src/sections/footer.html", populateFooter);
+  //   loadComponent(
+  //   "contact-us",
+  //   "src/sections/contact.html",
+  //   contactPagePopulation
+  // );
 });
-function test() {
-    const links = ["About", "services", "References", "Contact"]
-    const smallScreensLinks = document.querySelector("[data-id = large-devices-screens]")
-    const largeScreensLinks = document.querySelector("[data-id = small-screens-links]")
+export function test() {
+  const links = [{
+    linkName:"About", url: "#"}, {linkName: "Services", url:"#"}, {linkName: "References", url:"#"}, {linkName: "Contact", url:"/src/sections/contact.html"}
+  ];
+  const smallScreensLinks = document.querySelector(
+    "[data-id = large-devices-screens]"
+  );
+  const largeScreensLinks = document.querySelector(
+    "[data-id = small-screens-links]"
+  );
 
-    smallScreensLinks.innerHTML = ``;
-    largeScreensLinks.innerHTML = ``;
+  smallScreensLinks.innerHTML = ``;
+  largeScreensLinks.innerHTML = ``;
 
-    links.forEach(link => {
-        smallScreensLinks.innerHTML +=`<a href="#" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
-        >${link}</a
-      >`
-        
-        largeScreensLinks.innerHTML +=`<a href="#" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
-        >${link}</a
-      >`
-    })
+  links.forEach((link) => {
+    const {linkName, url} = link;
+    smallScreensLinks.innerHTML += `<a href="${url}" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
+        >${linkName}</a
+      >`;
+
+    largeScreensLinks.innerHTML += `<a href="${url}" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
+        >${linkName}</a
+      >`;
+  });
 }
-function setupMobileMenu() {
+export function setupMobileMenu() {
   const menuIcon = document.getElementById("mobileMenuIcon");
   const menu = document.getElementById("mobileMenu");
 
@@ -88,7 +102,7 @@ function aboutUsServices() {
     .map((service) => `<h2>${service}</h2>`)
     .join("");
 }
-function populateFooter() {
+export function populateFooter() {
   const footerContent = {
     companyName: "Agentur Baumeister",
     street: "Bockhstraße 13",
