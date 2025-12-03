@@ -580,14 +580,6 @@ video {
   top: 100px;
 }
 
-.top-\[450px\]{
-  top: 450px;
-}
-
-.top-\[0px\]{
-  top: 0px;
-}
-
 .top-\[500px\]{
   top: 500px;
 }
@@ -701,10 +693,6 @@ video {
 
 .ml-5{
   margin-left: 1.25rem;
-}
-
-.mr-11{
-  margin-right: 2.75rem;
 }
 
 .mt-10{
@@ -913,33 +901,17 @@ video {
   background-image: url('../images/ipad.png');
 }
 
-.bg-\[url\(\'\.\/images\/ipad\.png\'\)\]{
-  background-image: url('./images/ipad.png');
-}
-
 .bg-cover{
   background-size: cover;
-}
-
-.bg-center{
-  background-position: center;
 }
 
 .bg-repeat{
   background-repeat: repeat;
 }
 
-.bg-no-repeat{
-  background-repeat: no-repeat;
-}
-
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.p-5{
-  padding: 1.25rem;
 }
 
 .px-20{
@@ -998,10 +970,6 @@ video {
   line-height: 2rem;
 }
 
-.text-\[20px\]{
-  font-size: 20px;
-}
-
 .text-\[24px\]{
   font-size: 24px;
 }
@@ -1042,10 +1010,6 @@ video {
 
 .leading-\[60px\]{
   line-height: 60px;
-}
-
-.leading-relaxed{
-  line-height: 1.625;
 }
 
 .text-\[\#00672E\]{
@@ -1343,10 +1307,6 @@ video {
     background-image: url('../images/mediumScreen.png');
   }
 
-  .md\:bg-\[url\(\'\.\/images\/mediumScreen\.png\'\)\]{
-    background-image: url('./images/mediumScreen.png');
-  }
-
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1368,10 +1328,6 @@ video {
 
   .md\:text-\[16px\]{
     font-size: 16px;
-  }
-
-  .md\:text-\[24px\]{
-    font-size: 24px;
   }
 
   .md\:text-xl{
@@ -1410,11 +1366,6 @@ video {
     margin-right: 8rem;
   }
 
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:-ml-\[1045px\]{
     margin-left: -1045px;
   }
@@ -1439,12 +1390,20 @@ video {
     margin-left: 140px;
   }
 
+  .lg\:ml-\[26rem\]{
+    margin-left: 26rem;
+  }
+
   .lg\:mr-20{
     margin-right: 5rem;
   }
 
   .lg\:mt-0{
     margin-top: 0px;
+  }
+
+  .lg\:mt-44{
+    margin-top: 11rem;
   }
 
   .lg\:mt-60{
@@ -1469,42 +1428,6 @@ video {
 
   .lg\:mt-\[90px\]{
     margin-top: 90px;
-  }
-
-  .lg\:ml-24{
-    margin-left: 6rem;
-  }
-
-  .lg\:mt-12{
-    margin-top: 3rem;
-  }
-
-  .lg\:mt-96{
-    margin-top: 24rem;
-  }
-
-  .lg\:ml-96{
-    margin-left: 24rem;
-  }
-
-  .lg\:mt-44{
-    margin-top: 11rem;
-  }
-
-  .lg\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .lg\:ml-\[25rem\]{
-    margin-left: 25rem;
-  }
-
-  .lg\:ml-\[2rem\]{
-    margin-left: 2rem;
-  }
-
-  .lg\:ml-\[26rem\]{
-    margin-left: 26rem;
   }
 
   .lg\:block{
@@ -1551,14 +1474,6 @@ video {
     height: 873.4869995117188px;
   }
 
-  .lg\:h-\[\]{
-    height: ;
-  }
-
-  .lg\:h-\[200px\]{
-    height: 200px;
-  }
-
   .lg\:w-\[208px\]{
     width: 208px;
   }
@@ -1569,6 +1484,10 @@ video {
 
   .lg\:w-\[355px\]{
     width: 355px;
+  }
+
+  .lg\:w-\[38rem\]{
+    width: 38rem;
   }
 
   .lg\:w-\[406px\]{
@@ -1603,62 +1522,6 @@ video {
     width: 100%;
   }
 
-  .lg\:w-\[\]{
-    width: ;
-  }
-
-  .lg\:w-\[48\]{
-    width: 48;
-  }
-
-  .lg\:w-\[489px\]{
-    width: 489px;
-  }
-
-  .lg\:w-1{
-    width: 0.25rem;
-  }
-
-  .lg\:w-14{
-    width: 3.5rem;
-  }
-
-  .lg\:w-0{
-    width: 0px;
-  }
-
-  .lg\:w-40{
-    width: 10rem;
-  }
-
-  .lg\:w-96{
-    width: 24rem;
-  }
-
-  .lg\:w-\[30rem\]{
-    width: 30rem;
-  }
-
-  .lg\:w-\[50rem\]{
-    width: 50rem;
-  }
-
-  .lg\:w-\[40rem\]{
-    width: 40rem;
-  }
-
-  .lg\:w-\[38rem\]{
-    width: 38rem;
-  }
-
-  .lg\:max-w-lg{
-    max-width: 32rem;
-  }
-
-  .lg\:scroll-pt-96{
-    scroll-padding-top: 24rem;
-  }
-
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1679,30 +1542,13 @@ video {
     overflow: clip;
   }
 
-  .lg\:bg-black{
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-  }
-
   .lg\:bg-\[url\(\'\.\.\/images\/bigScreen\.png\'\)\]{
     background-image: url('../images/bigScreen.png');
-  }
-
-  .lg\:bg-\[url\(\'\.\/images\/bigScreen\.png\'\)\]{
-    background-image: url('./images/bigScreen.png');
   }
 
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .lg\:pl-\[450px\]{
-    padding-left: 450px;
-  }
-
-  .lg\:pr-96{
-    padding-right: 24rem;
   }
 
   .lg\:pt-24{
@@ -1711,22 +1557,6 @@ video {
 
   .lg\:pt-56{
     padding-top: 14rem;
-  }
-
-  .lg\:pt-96{
-    padding-top: 24rem;
-  }
-
-  .lg\:pt-44{
-    padding-top: 11rem;
-  }
-
-  .lg\:text-left{
-    text-align: left;
-  }
-
-  .lg\:text-center{
-    text-align: center;
   }
 
   .lg\:text-right{
