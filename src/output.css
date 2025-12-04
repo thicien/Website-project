@@ -694,8 +694,13 @@ video {
   margin-left: 1.25rem;
 }
 
+<<<<<<< Updated upstream
 .mr-\[15px\]{
   margin-right: 15px;
+=======
+.mr-\[25px\]{
+  margin-right: 25px;
+>>>>>>> Stashed changes
 }
 
 .mt-10{
@@ -742,6 +747,7 @@ video {
   margin-top: 6.1rem;
 }
 
+<<<<<<< Updated upstream
 .-mt-10{
   margin-top: -2.5rem;
 }
@@ -778,6 +784,8 @@ video {
   margin-top: -7rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .flex{
   display: flex;
 }
@@ -986,6 +994,14 @@ video {
   border-radius: 0.5rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+}
+
+>>>>>>> Stashed changes
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -995,16 +1011,39 @@ video {
   background-image: url('../images/ipad.png');
 }
 
+.bg-\[url\(\'\/images\/backgrou\.png\'\)\]{
+  background-image: url('/images/backgrou.png');
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-repeat{
   background-repeat: repeat;
 }
 
+<<<<<<< Updated upstream
+=======
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+>>>>>>> Stashed changes
 .fill-current{
   fill: currentColor;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-20{
@@ -1055,10 +1094,13 @@ video {
   padding-top: 20rem;
 }
 
+<<<<<<< Updated upstream
 .pt-40{
   padding-top: 10rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .text-center{
   text-align: center;
 }
@@ -1140,6 +1182,12 @@ video {
 
 .underline{
   text-decoration-line: underline;
+}
+
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition{
