@@ -6,8 +6,6 @@ const imprint = {
       "Katrein Baumeister",
       "Böckhstraße 13",
       "10967 Berlin",
-      "+49 (0)30 - 490 827 ",
-      "87hallo@agentur-baumeister.com",
     ],
   },
 };
