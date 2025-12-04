@@ -50,7 +50,7 @@ export function test() {
         >${linkName}</a
       >`;
 
-    largeScreensLinks.innerHTML += `<a href="${url}" class="font-Outfit lg:hover:bg-transparent lg:mx-2"
+    largeScreensLinks.innerHTML += `<a href="${url}" class="font-Outfit lg:hover:bg-transparent "
         >${linkName}</a
       >`;
   });
