@@ -1,5 +1,3 @@
-// import contactPagePopulation from "./contacts.js";
-
 export const loadComponent = (id, url, callback = setupMobileMenu) => {
   fetch(url)
     .then((res) => {
@@ -31,7 +29,7 @@ export function test() {
       linkName: "About",
       url: "#about-us",
     },
-    { linkName: "Services", url: "#service" },
+    { linkName: "Services", url: "#services" },
     { linkName: "References", url: "/src/sections/data-privacy.html" },
     { linkName: "Contact", url: "/src/sections/contact.html" },
   ];
@@ -137,7 +135,7 @@ function populateServices(){
       "Digital marketing & content production",
       "Influencer relations",
     ];
-    
+
     servicesContents.innerHTML = allServices
       .map((service) => `<h2>${service}</h2>`)
       .join("");
