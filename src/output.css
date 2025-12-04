@@ -909,9 +909,16 @@ video {
   background-repeat: repeat;
 }
 
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
+.fill-red-700{
+  fill: #b91c1c;
+}
+
+.fill-inherit{
+  fill: inherit;
+}
+
+.fill-current{
+  fill: currentColor;
 }
 
 .px-20{
@@ -1030,6 +1037,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-500{
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity, 1));
 }
 
 .underline{
