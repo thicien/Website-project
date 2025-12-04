@@ -1,5 +1,3 @@
-// import contactPagePopulation from "./contacts.js";
-
 export const loadComponent = (id, url, callback = setupMobileMenu) => {
   fetch(url)
     .then((res) => {
@@ -20,6 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   loadComponent("hero-section", "src/sections/HeroSection.html");
   loadComponent("about-us", "src/sections/AboutUs.html", aboutUsServices);
+  loadComponent("services", "src/sections/service.html", populateServices);
   loadComponent("service", "src/sections/services.html", servicesContent);
   loadComponent("footer", "src/sections/footer.html", populateFooter);
   loadComponent("data-privacy", "src/sections/data-privacy.html");
@@ -30,7 +29,7 @@ export function test() {
       linkName: "About",
       url: "#about-us",
     },
-    { linkName: "Services", url: "#service" },
+    { linkName: "Services", url: "#services" },
     { linkName: "References", url: "/src/sections/data-privacy.html" },
     { linkName: "Contact", url: "/src/sections/contact.html" },
   ];
@@ -120,31 +119,41 @@ export function setupMobileMenu() {
   });
 }
 
+
+function populateServices(){
+    const strategyApproach = `Our strategic approach is a collaborative journey that starts with        analysing the initial situation and leads to messages that cut through the information overload. We take care of content production and maintain relationships with multipliers to position your brand in the best possible way. From analysis to implementation, we accompany you every step of the way, ensuring that every measure is effective.`;
+
+    const strategyApproachElement = document.getElementById("strategy-approach");
+    const servicesContents = document.getElementById("services-content");
+
+    strategyApproachElement.textContent = strategyApproach;
+    const allServices = [
+      "Brand strategy",
+      "Corporate Identity & Website development",
+      "SEO & copywriting",
+      "Media Relations",
+      "Digital marketing & content production",
+      "Influencer relations",
+    ];
+
+    servicesContents.innerHTML = allServices
+      .map((service) => `<h2>${service}</h2>`)
+      .join("");
+}
+
 function aboutUsServices() {
-  const services = document.getElementById("services");
   const aboutUsServicesContent = {
     "about-us-text": `We are a Berlin-based communications agency specialising in helping companies and brands find their voice and position themselves. Whether it's brand building, identity sharpening, or communication strategy, we bring a fresh perspective to established structures, develop tailor-made communication solutions, and ensure that messages resonate. With over a decade of experience, we have honed our skills in giving brands their unmistakable identity and making them visible in the long term.`,
-    "strategy-approach": `Our strategic approach is a collaborative journey that starts with analysing the initial situation and leads to messages that cut through the information overload. We take care of content production and maintain relationships with multipliers to position your brand in the best possible way. From analysis to implementation, we accompany you every step of the way, ensuring that every measure is effective.`,
   };
+
   Object.entries(aboutUsServicesContent).forEach(([id, text]) => {
     const element = document.getElementById(id);
     if (element) {
       element.textContent = text;
     }
   });
-
-  const allServices = [
-    "Brand strategy",
-    "Corporate Identity & Website development",
-    "SEO & copywriting",
-    "Media Relations",
-    "Digital marketing & content production",
-    "Influencer relations",
-  ];
-  services.innerHTML = allServices
-    .map((service) => `<h2>${service}</h2>`)
-    .join("");
 }
+
 export function populateFooter() {
   const footerContent = {
     companyName: "Agentur Baumeister",
