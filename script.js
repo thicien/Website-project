@@ -76,7 +76,7 @@ export function setupMobileMenu() {
 >
   <path
     d="M1.10811 9.11842L0 19.1053L8.64865 28.3493L31.5135 30L39 19.0227L28 7L1.10811 9.11842Z"
-    class="fill-current"
+    fill="black"
   />
   <path
     d="M21.072 24L17.52 19.008L17.112 18.624L12.624 12.6H15.24L18.48 17.04L18.888 17.376L23.688 24H21.072ZM12.408 24L17.112 17.664L18.336 19.248L14.952 24H12.408ZM19.056 18.6L17.808 17.064L20.952 12.6H23.472L19.056 18.6Z"
@@ -119,26 +119,25 @@ export function setupMobileMenu() {
   });
 }
 
+function populateServices() {
+  const strategyApproach = `Our strategic approach is a collaborative journey that starts with analysing the initial situation and leads to messages that cut through the information overload. We take care of content production and maintain relationships with multipliers to position your brand in the best possible way. From analysis to implementation, we accompany you every step of the way, ensuring that every measure is effective.`;
 
-function populateServices(){
-    const strategyApproach = `Our strategic approach is a collaborative journey that starts with        analysing the initial situation and leads to messages that cut through the information overload. We take care of content production and maintain relationships with multipliers to position your brand in the best possible way. From analysis to implementation, we accompany you every step of the way, ensuring that every measure is effective.`;
+  const strategyApproachElement = document.getElementById("strategy-approach");
+  const servicesContents = document.getElementById("services-content");
 
-    const strategyApproachElement = document.getElementById("strategy-approach");
-    const servicesContents = document.getElementById("services-content");
+  strategyApproachElement.textContent = strategyApproach;
+  const allServices = [
+    "Brand strategy",
+    "Corporate Identity & Website development",
+    "SEO & copywriting",
+    "Media Relations",
+    "Digital marketing & content production",
+    "Influencer relations",
+  ];
 
-    strategyApproachElement.textContent = strategyApproach;
-    const allServices = [
-      "Brand strategy",
-      "Corporate Identity & Website development",
-      "SEO & copywriting",
-      "Media Relations",
-      "Digital marketing & content production",
-      "Influencer relations",
-    ];
-
-    servicesContents.innerHTML = allServices
-      .map((service) => `<h2>${service}</h2>`)
-      .join("");
+  servicesContents.innerHTML = allServices
+    .map((service) => `<h2>${service}</h2>`)
+    .join("");
 }
 
 function aboutUsServices() {
