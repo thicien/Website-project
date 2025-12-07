@@ -10,6 +10,7 @@ const imprint = {
   },
 };
 
+
 const contacts = {
   "": {
     contents: ["+49 (0)30 - 490 827 ", "87hallo@agentur-baumeister.com"],
