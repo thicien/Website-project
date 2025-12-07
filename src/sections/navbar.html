@@ -1,0 +1,69 @@
+<nav class="flex justify-between md:px-10 py-4">
+  <div class="relative" id="languageDropdown">
+    <button
+      id="dropdownButton"
+      class="flex flex-col lg:text-2xl text-center rounded-lg hover:bg-gray-50 transition px-3 md:px-0 py-2 md:py-0"
+    >
+      <span id="dutch">DE</span>
+      <span id="english">EN</span>
+    </button>
+  </div>
+  <div class="mt-4 grid gap-7 lg:self-center">
+
+    <h1
+        class="font-bold text-2xl lg:text-5xl sm:text-3xl truncate font-outfit p-4"
+      >
+      <span class="lg:hidden 
+           bg-[url('/images/backgrou.png')] bg-no-repeat bg-center bg-contain 
+          p-4">
+          Baumeister
+      </span>
+
+      <span class=" hidden lg:block">
+        Baumeister
+      </span>
+    </h1>
+
+    <ul
+      id="mobileMenu"
+      data-id="small-screens-links"
+      class="flex flex-col font-semibold items-center gap-5 lg:hidden hidden text-green-700"
+    ></ul>
+  </div>
+  <ul
+    data-id="large-devices-screens"
+    class="hidden font-semibold lg:text-2xl lg:flex flex-col items-end"
+  ></ul>
+  <div class="lg:hidden px-3 cursor-pointer">
+    <div id="mobileMenuIcon" class="w-10 h-10 cursor-pointer mt-5">
+      <svg
+        viewBox="0 0 39 23"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-full h-full"
+      >
+        <path
+          d="M1.10811 2.11842L0 12.1053L8.64865 21.3493L31.5135 23L39 12.0227L28 0L1.10811 2.11842Z"
+          class="fill-current"
+        />
+        <line x1="10" y1="6" x2="26" y2="6" stroke="#EFECEA" stroke-width="2" />
+        <line
+          x1="10"
+          y1="11"
+          x2="26"
+          y2="11"
+          stroke="#EFECEA"
+          stroke-width="2"
+        />
+        <line
+          x1="10"
+          y1="16"
+          x2="26"
+          y2="16"
+          stroke="#EFECEA"
+          stroke-width="2"
+        />
+      </svg>
+    </div>
+  </div>
+</nav>
